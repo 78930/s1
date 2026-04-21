@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { z } from "zod";
 import { asyncHandler } from "../utils/asyncHandler.js";
-import UserModel from "../models/User.js";
+iimport UserModel from "../models/User.ts";
 import WorkerProfileModel from "../models/WorkerProfile.js";
 import FactoryProfileModel from "../models/FactoryProfile.js";
 import { comparePassword, hashPassword } from "../utils/password.js";
