@@ -50,6 +50,7 @@ router.post(
     }
 
     const user = await UserModel.create({
+          name: input.fullName,
       email: input.email.toLowerCase(),
       phone: input.phone,
       passwordHash: await hashPassword(input.password),
